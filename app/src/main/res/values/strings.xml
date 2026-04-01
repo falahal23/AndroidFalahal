@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">Belajar Apps</string>
+    <color name="biru">#B5E4FA</color>
+    <color name="button">#214066</color>
 </resources>
