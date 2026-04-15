@@ -2,9 +2,12 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools">
 
+<<<<<<< HEAD
     <!-- ✅ Permission Internet -->
     <uses-permission android:name="android.permission.INTERNET" />
 
+=======
+>>>>>>> 25a1dc698a6273973a911409ee50f52bbeffef25
     <application
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
@@ -14,6 +17,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.BelajarApps">
+<<<<<<< HEAD
 
         <!-- ✅ WebView Activity -->
         <activity
@@ -33,6 +37,8 @@
         </activity>
 
         <!-- Activity lain -->
+=======
+>>>>>>> 25a1dc698a6273973a911409ee50f52bbeffef25
         <activity
             android:name=".pertemuan4.FourthActivity"
             android:exported="false" />
@@ -40,6 +46,7 @@
         <activity
             android:name=".pertemuan3.ThirdResultAcitvity"
             android:exported="false" />
+<<<<<<< HEAD
 
         <activity
             android:name=".Pertemuan_2.SecondActivity"
@@ -53,6 +60,26 @@
             android:name=".MainActivity"
             android:exported="false" />
 
+=======
+        <activity
+            android:name=".Pertemuan_2.SecondActivity"
+            android:exported="false" />
+        <activity
+            android:name=".pertemuan3.ThirdActivity"
+            android:exported="false">
+
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+
+        <intent-filter>
+            <action android:name="android.intent.action.MAIN" />
+
+            <category android:name="android.intent.category.LAUNCHER" />
+        </intent-filter>
+    </activity>
+>>>>>>> 25a1dc698a6273973a911409ee50f52bbeffef25
     </application>
 
 </manifest>
