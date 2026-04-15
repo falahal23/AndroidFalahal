@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F5F5F5"
+    tools:context=".pertemuan5.FifthActivity">
+
+    <!-- HEADER -->
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appBarLayout"
+        android:layout_width="match_parent"
+        android:layout_height="320dp"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+        <com.google.android.material.appbar.CollapsingToolbarLayout
+            android:id="@+id/collapsingToolbar"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:contentScrim="?attr/colorPrimary"
+            app:layout_scrollFlags="scroll|exitUntilCollapsed">
+
+            <!-- IMAGE -->
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop"
+                android:src="@drawable/img_7"
+                android:contentDescription="News Image"
+                app:layout_collapseMode="parallax" />
+
+            <!-- GRADIENT OVERLAY (Opsional, pastikan drawable ada atau ganti warna) -->
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#66000000" />
+
+            <!-- TOOLBAR -->
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                app:layout_collapseMode="pin"
+                app:popupTheme="@style/ThemeOverlay.AppCompat.Light" />
+
+        </com.google.android.material.appbar.CollapsingToolbarLayout>
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <!-- CONTENT -->
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+            <!-- CATEGORY -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="TECH • 5 MIN READ"
+                android:textColor="#CC0000"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                android:letterSpacing="0.12" />
+
+            <!-- TITLE -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Masa Depan AI: Bagaimana Teknologi Mengubah Cara Kita Berinteraksi"
+                android:textColor="#111111"
+                android:textSize="28sp"
+                android:textStyle="bold"
+                android:lineSpacingExtra="6dp" />
+
+            <!-- AUTHOR -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="Oleh Budi Santoso • 15 April 2026"
+                android:textColor="#888888"
+                android:textSize="12sp" />
+
+            <!-- DIVIDER -->
+            <View
+                android:layout_width="50dp"
+                android:layout_height="4dp"
+                android:background="#CC0000"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="16dp"/>
+
+            <!-- PARAGRAF UTAMA -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Kecerdasan buatan bukan lagi sekadar fiksi ilmiah. Saat ini, AI telah merambah ke berbagai sektor kehidupan manusia, mulai dari asisten digital hingga analisis medis yang sangat akurat."
+                android:textColor="#333333"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:lineSpacingExtra="8dp"/>
+
+            <!-- PARAGRAF -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="Teknologi ini terus berkembang pesat, memungkinkan mesin untuk belajar dari data dan mengambil keputusan yang semakin kompleks. Tantangan ke depan adalah bagaimana kita dapat menyelaraskan kemajuan ini dengan etika dan kemanusiaan."
+                android:textColor="#444444"
+                android:textSize="17sp"
+                android:lineSpacingExtra="10dp" />
+
+            <!-- BUTTON -->
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnWebView"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:layout_marginTop="24dp"
+                android:text="BACA SELENGKAPNYA"
+                android:textStyle="bold"
+                android:textColor="@android:color/white"
+                android:backgroundTint="#CC0000"
+                app:cornerRadius="10dp" />
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
