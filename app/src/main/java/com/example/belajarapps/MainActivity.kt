@@ -47,7 +47,7 @@ class MainActivity : AppCompatActivity() {
                     val editor = sharedPref.edit()
                     editor.clear()
                     editor.apply()
-                    val intent = Intent(this, AuthActivity::class.java)
+                    val intent = Intent(this, SplashScreenActivity::class.java)
                     startActivity(intent)
                     finish()
                     dialog.dismiss()
