@@ -2,4 +2,8 @@
 <resources>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+    <color name="biru">#FF0000FF</color>
+    <color name="merah">#FFFF0000</color>
+    <color name="hijau">#FF00FF00</color>
+    <color name="button">#214066</color>
 </resources>

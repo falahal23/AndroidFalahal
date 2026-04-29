@@ -1,4 +1,4 @@
-package com.example.belajarapps.pertemuan4
+package com.example.belajarapps.Home.pertemuan4
 
 import android.content.Intent
 import android.os.Bundle
@@ -10,7 +10,6 @@ import androidx.core.view.WindowInsetsCompat
 import com.example.belajarapps.MainActivity
 import com.example.belajarapps.R
 import com.example.belajarapps.databinding.ActivityFourth3Binding
-import com.example.belajarapps.pertemuan3.ThirdResultAcitvity
 import com.google.android.material.dialog.MaterialAlertDialogBuilder
 import com.google.android.material.snackbar.Snackbar
 

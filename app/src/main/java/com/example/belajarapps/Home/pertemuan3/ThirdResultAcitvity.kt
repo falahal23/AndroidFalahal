@@ -1,4 +1,4 @@
-package com.example.belajarapps.pertemuan3
+package com.example.belajarapps.Home.pertemuan3
 
 import android.os.Bundle
 import androidx.activity.enableEdgeToEdge
