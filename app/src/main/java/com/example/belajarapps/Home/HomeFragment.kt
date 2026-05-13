@@ -12,6 +12,7 @@ import com.example.belajarapps.Home.pertemuan4.FourthActivity
 import com.example.belajarapps.Home.pertemuan5.FifthActivity
 import com.example.belajarapps.Home.pertemuan5.WebViewActivity
 import com.example.belajarapps.Home.pertemuan7.SevenActivity
+import com.example.belajarapps.Home.pertemuan9.NinthActivity
 import com.example.belajarapps.databinding.FragmentHomeBinding
 
 class HomeFragment : Fragment() {
@@ -35,33 +36,35 @@ class HomeFragment : Fragment() {
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
 
-        binding.btnPertemuan2.setOnClickListener {
+        binding.btnToSecond.setOnClickListener {
             val intent = Intent(requireContext(), SecondActivity::class.java)
             startActivity(intent)
         }
 
-        binding.btnPertemuan3.setOnClickListener {
+        binding.btnToThird.setOnClickListener {
             val intent = Intent(requireContext(), ThirdActivity::class.java)
             startActivity(intent)
         }
 
-//        binding.btnToFourth.setOnClickListener {
-//            val intent = Intent(requireContext(), FourthActivity::class.java)
-//            startActivity(intent)
-//        }
-
-        binding.btnPertemuan4.setOnClickListener {
+        binding.btnToFourth.setOnClickListener {
             val intent = Intent(requireContext(), FifthActivity::class.java)
             startActivity(intent)
         }
 
-        binding.btnPertemuan5.setOnClickListener {
+        binding.btnToFifth.setOnClickListener {
             val intent = Intent(requireContext(), WebViewActivity::class.java)
             startActivity(intent)
         }
-        binding.btnPertemuan7.setOnClickListener {
+        binding.btnToSeven.setOnClickListener {
             val intent = Intent(requireContext(), SevenActivity::class.java)
+            startActivity(intent)
+        }
+
+
+        binding.btnToNinth.setOnClickListener {
+            val intent = Intent(requireContext(), NinthActivity::class.java)
             startActivity(intent)
         }
 
