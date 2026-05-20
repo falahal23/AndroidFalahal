@@ -61,8 +61,16 @@
         android:id="@+id/btnToNinth"
         android:layout_width="match_parent"
         android:layout_height="60dp"
-        android:layout_marginBottom="24dp"
+        android:layout_marginBottom="12dp"
         android:text="Pertemuan 9"
+        android:textAllCaps="false" />
+
+    <Button
+        android:id="@+id/btnToTenth"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginBottom="24dp"
+        android:text="Pertemuan 10"
         android:textAllCaps="false" />
 
     <Button

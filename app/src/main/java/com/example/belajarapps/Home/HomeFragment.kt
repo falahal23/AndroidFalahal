@@ -13,6 +13,7 @@ import com.example.belajarapps.Home.pertemuan5.FifthActivity
 import com.example.belajarapps.Home.pertemuan5.WebViewActivity
 import com.example.belajarapps.Home.pertemuan7.SevenActivity
 import com.example.belajarapps.Home.pertemuan9.NinthActivity
+import com.example.belajarapps.Home.pertemuan_10.TenthActivity
 import com.example.belajarapps.databinding.FragmentHomeBinding
 
 class HomeFragment : Fragment() {
@@ -65,6 +66,11 @@ class HomeFragment : Fragment() {
 
         binding.btnToNinth.setOnClickListener {
             val intent = Intent(requireContext(), NinthActivity::class.java)
+            startActivity(intent)
+        }
+
+        binding.btnToTenth.setOnClickListener {
+            val intent = Intent(requireContext(), TenthActivity::class.java)
             startActivity(intent)
         }
 

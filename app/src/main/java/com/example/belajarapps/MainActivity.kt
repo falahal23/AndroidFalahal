@@ -14,6 +14,7 @@ import com.example.belajarapps.Home.pertemuan4.FourthActivity
 import com.example.belajarapps.Home.pertemuan5.WebViewActivity
 import com.example.belajarapps.Home.pertemuan7.SevenActivity
 import com.example.belajarapps.Home.pertemuan9.NinthActivity
+import com.example.belajarapps.Home.pertemuan_10.TenthActivity
 import kotlin.jvm.java
 
 class MainActivity : AppCompatActivity() {
@@ -84,6 +85,11 @@ class MainActivity : AppCompatActivity() {
         //pertemuan9
         binding.btnPertemuan9.setOnClickListener {
             val intent = Intent(this, NinthActivity::class.java)
+            startActivity(intent)
+        }
+
+        binding.btnPertemuan10.setOnClickListener {
+            val intent = Intent(this, TenthActivity::class.java)
             startActivity(intent)
         }
 
